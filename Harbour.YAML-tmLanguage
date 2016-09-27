@@ -6,7 +6,7 @@ uuid: 56571807-d94d-4805-bbfc-87d347d189e4
 
 patterns:
 - comment: e.g. function play(arg1, arg2) {  }
-  name: meta.function.harbour
+  name: meta.function.harbour 
   begin: |-
     (?ix)
       \s*(function|procedure)
@@ -184,7 +184,7 @@ patterns:
   match: (?i)\b(?:COPY|EXTENDED|CREATE|DELETE|DIR|EJECT|ERASE|FILE|KEYBOARD|LABEL
     FORM|MENU TO|PROMPT|PACK|RENAME|REPORT FORM|RESTORE SCREEN|RUN|SAVE SCREEN|SAY
     |STRUCTURE|ALTERNATE|BELL|CENTURY|CONSOLE|DATE|DECIMALS|DEFAULT|DEVICE|EPOCH
-    |FIXED|INTENSITY|KEY|MESSAGE|PATH|PRINTER|WRAP|TYPE|ZAP|REPLACE|INSERT|APPEND|DELETE|close|databases|commit|seek|localte|use)\b
+    |FIXED|INTENSITY|KEY|MESSAGE|PATH|PRINTER|WRAP|TYPE|ZAP|REPLACE|INSERT|APPEND|DELETE|close|databases|commit|seek|locate|use|index|go|clear)\b
 
 - comment: definition class
   name: support.class.harbour
@@ -196,7 +196,7 @@ patterns:
   match: (?i)\b(?:FOR|WHILE|BLANK|WITH|TO)\b
 
 - name: entity.other.attribute-name.harbour
-  match: (?i)\b(in|instanceof|new|of|typeof|void|with|on|off|alias|in|all|from|for)\b
+  match: (?i)\b(in|instanceof|new|of|typeof|void|with|on|off|alias|in|all|from|for|top|bottom|typeahead)\b
 
 - name: keyword.operator.logical.harbour
   match: |-
